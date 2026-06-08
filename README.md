@@ -19,3 +19,22 @@ An end-to-end data engineering and analytics project analyzing 180,000+ supply c
 - 💰 Profit and sales analysis across global markets
 
 ## Project Structure
+supply-chain-analytics/
+├── etl/
+│   ├── extract.py      # Data extraction
+│   ├── transform.py    # Data cleaning & feature engineering
+│   └── load.py         # Load to data warehouse
+├── models/
+│   ├── eda.py          # Exploratory data analysis
+│   ├── predict.py      # ML delay prediction model
+│   └── delay_model.pkl # Saved trained model
+├── dashboard/          # Generated charts
+└── data/               # Raw and cleaned datasets
+
+## How to Run
+pip install pandas numpy scikit-learn matplotlib seaborn
+python etl/extract.py
+python etl/transform.py
+python etl/load.py
+python models/eda.py
+python models/predict.py
